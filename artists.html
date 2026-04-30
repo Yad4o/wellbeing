@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artists & Shows — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .artist-card {
+      display: grid;
+      grid-template-columns: 300px 1fr;
+      gap: 48px;
+      align-items: start;
+      padding: 60px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .artist-img {
+      height: 360px;
+      border-radius: 2px;
+      background-size: cover;
+      background-position: center;
+      filter: brightness(0.85);
+    }
+    .artist-genre { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .artist-name { font-family: 'Cormorant Garamond', serif; font-size: clamp(36px, 4vw, 56px); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 16px; }
+    .artist-bio { font-size: 15px; color: var(--warm); line-height: 1.9; max-width: 520px; margin-bottom: 24px; }
+    .upcoming-dates { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 16px; }
+    .date-chip { font-size: 11px; font-weight: 600; letter-spacing: 0.1em; padding: 8px 16px; border: 1px solid var(--border); border-radius: 2px; color: var(--warm); }
+    .show-row { display: grid; grid-template-columns: 80px 1fr 120px 120px; gap: 24px; align-items: center; padding: 20px 0; border-bottom: 1px solid rgba(201,169,110,0.06); }
+    .show-date { font-family: 'Cormorant Garamond', serif; font-size: 20px; color: var(--gold); font-style: italic; }
+    .show-artist { font-size: 15px; color: var(--cream); font-weight: 500; }
+    .show-type { font-size: 11px; color: var(--warm); letter-spacing: 0.1em; text-transform: uppercase; }
+    .show-venue { font-size: 12px; color: var(--warm); }
+    @media (max-width: 900px) { .artist-card { grid-template-columns: 1fr; gap: 32px; } .show-row { grid-template-columns: 1fr 1fr; gap: 12px; } }
+  </style>
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:65vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1501386761578-eaa54b1ede8c?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; Artists &amp; Shows</p>
+      <h1 class="page-title">The music is <em>not</em><br>background.</h1>
+      <p class="page-tagline">All artists perform for the music, not the money. That's why we pay them properly.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div style="max-width:760px;margin-bottom:80px">
+      <p class="sub-label">Our Programme</p>
+      <h2 class="sub-heading">Curated. Not <em>random.</em></h2>
+      <div class="gold-divider"></div>
+      <p class="sub-body">The music programme at Wellbeing is run by Bar Director Marcus DeSouza and Creative Director Lara Mehta. It has its own budget, its own logic, and its own relationship with the city's music scene. We don't book big names to sell tickets. We book good artists because we like what they do. Sometimes those are the same thing.</p>
+      <p class="sub-body" style="margin-top:16px">Friday and Saturday nights have a headliner. Wednesday is jazz. Sunday afternoons are instrumental. Everything in between is what feels right that week.</p>
+    </div>
+
+    <!-- ARTIST PROFILES -->
+    <p class="sub-label">Our Artists</p>
+    <h2 class="sub-heading"><em>Resident</em> &amp; Visiting</h2>
+    <div class="gold-divider"></div>
+
+    <!-- DJ KEMI -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">Afrobeats · Electronic · Amapiano</p>
+        <h2 class="artist-name">DJ Kemi</h2>
+        <p class="artist-bio">Kemi Okonkwo arrived in Mumbai in 2018 via Lagos, London, and a brief but formative stint in Cape Town. Her sets are generous — she plays for the room, not the recording. At Wellbeing she holds the Friday residency with a loyalty that has nothing to do with money and everything to do with the dancefloor's energy after midnight.</p>
+        <p class="artist-bio">Her signature is patience. She builds slowly, reads the room, and the drop — when it comes — feels earned. Several producers have tried to bottle what she does. None have succeeded.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Fri, 9 May</span>
+          <span class="date-chip">Fri, 23 May</span>
+          <span class="date-chip">Fri, 6 Jun</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- RAAHI -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">Indie Folk · Carnatic Fusion · Live</p>
+        <h2 class="artist-name">Raahi</h2>
+        <p class="artist-bio">Vikram Nair plays under the name Raahi — which means "traveller" in Hindi, and he is. Trained in classical Carnatic music in Chennai, re-educated by a decade of indie folk in Edinburgh, and now back in Mumbai making music that belongs entirely to the intersection. He plays the rooftop most Saturday nights when the weather is kind.</p>
+        <p class="artist-bio">His live setup is minimal: a guitar, a shruti box, and a loop pedal he has owned since 2011 and refuses to replace. Everything you hear is made in real time.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Sat, 10 May</span>
+          <span class="date-chip">Sat, 24 May</span>
+          <span class="date-chip">Sat, 7 Jun</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- SABLE -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1598387993441-a364f854c3e1?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">Deep House · Minimal · Downtempo</p>
+        <h2 class="artist-name">Sable</h2>
+        <p class="artist-bio">Nobody knows Sable's real name. She prefers it that way. Her sets live in the late hours — after 1AM when the dinner crowd has thinned and the space belongs to people who chose to stay. The music is deep, deliberate, and occasionally uncomfortable in the best possible way.</p>
+        <p class="artist-bio">She holds the Wellbeing late-night residency on the last Friday of every month. The set starts at 1AM. It ends when she decides it ends. We have never asked her to stop early. We are not going to start.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Fri, 30 May</span>
+          <span class="date-chip">Fri, 27 Jun</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ZARA NOOR -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1571330735066-03aaa9429d89?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">Neo-Classical · Ambient · Piano</p>
+        <h2 class="artist-name">Zara Noor</h2>
+        <p class="artist-bio">Zara Noor is a pianist and composer who studied at the Royal Academy of Music and returned to Mumbai with a mission to make classical music feel alive to people who thought it was over their heads. It is not. Her Wednesday evening performances in The Lounge are the building's best-kept secret — and somehow still the hardest table to get on a weeknight.</p>
+        <p class="artist-bio">She releases music sporadically and on her own terms. Her most recent album, Saudade Bandra, was recorded live at Wellbeing at 2AM with no audience. The room was perfect for it.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Wed, 7 May</span>
+          <span class="date-chip">Wed, 14 May</span>
+          <span class="date-chip">Wed, 21 May</span>
+          <span class="date-chip">Wed, 28 May</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DJ ATLAS -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1499415479124-43c32433a620?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">House · Progressive · Electronic</p>
+        <h2 class="artist-name">DJ ATLAS</h2>
+        <p class="artist-bio">Aditya Sharma — DJ ATLAS — makes house music that sounds like it was composed specifically for large, dark rooms with excellent acoustics. He has played fabric in London, Fabric in Berlin, and Fabric in no other city because it's only in those two places. He brings that sensibility to Wellbeing without the attitude that sometimes accompanies it.</p>
+        <p class="artist-bio">His sets on the Main Floor on the second Saturday of each month have built a following that is genuinely difficult to explain to someone who hasn't experienced it. Just come on a second Saturday. You'll understand by midnight.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Sat, 17 May</span>
+          <span class="date-chip">Sat, 14 Jun</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- NINA K -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1520523839897-bd0b52f945a0?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">Jazz Piano · Live · Bebop · Contemporary</p>
+        <h2 class="artist-name">NINA K</h2>
+        <p class="artist-bio">Nina Krishnaswamy plays jazz piano the way good storytellers tell stories — with confidence, no wasted notes, and the occasional surprise that makes you rethink everything that came before it. She has been playing professionally since she was 17 and has the catalogue to prove it.</p>
+        <p class="artist-bio">Her Sunday evening sets are acoustic, intimate, and available as a trio (with Roshan on bass and Tenzin on brushed drums) or solo depending on the night and her mood. The Lounge holds 60 people. Sunday evenings it feels like ten. This is a compliment.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Sun, 11 May</span>
+          <span class="date-chip">Sun, 18 May</span>
+          <span class="date-chip">Sun, 25 May</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- VERB -->
+    <div class="artist-card">
+      <div class="artist-img" style="background-image:url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="artist-genre">Hip-Hop · Neo-Soul · Live</p>
+        <h2 class="artist-name">VERB</h2>
+        <p class="artist-bio">Kabir Verma performs as VERB — and the name is intentional. His music is active, engaged, and lyrically specific in a way that makes you want to listen again after the first time. Raised in Dharavi, educated at Berklee Online, currently living in Bandra. The contradictions are features, not bugs.</p>
+        <p class="artist-bio">His live shows at Wellbeing are part concert, part conversation. He talks between songs because he has things to say. The backing band (four pieces, always) is among the tightest in Mumbai. He performs on the first Saturday of each month on the Main Floor.</p>
+        <div class="upcoming-dates">
+          <span class="date-chip">Sat, 3 May</span>
+          <span class="date-chip">Sat, 7 Jun</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- UPCOMING SHOWS CALENDAR -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <p class="sub-label">Next Six Weeks</p>
+      <h2 class="sub-heading">Upcoming <em>Shows</em></h2>
+      <div style="margin-top:48px">
+        <div class="show-row" style="border-top:1px solid rgba(201,169,110,0.06)">
+          <span class="show-date">Sat 3</span>
+          <div><p class="show-artist">VERB</p><p class="show-type" style="margin-top:4px">Hip-Hop / Neo-Soul · Live Band</p></div>
+          <span style="font-size:12px;color:var(--warm)">Main Floor</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Wed 7</span>
+          <div><p class="show-artist">Zara Noor</p><p class="show-type" style="margin-top:4px">Neo-Classical · Piano Solo</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Lounge</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Fri 9</span>
+          <div><p class="show-artist">DJ Kemi</p><p class="show-type" style="margin-top:4px">Afrobeats / Amapiano · DJ Set</p></div>
+          <span style="font-size:12px;color:var(--warm)">Main Floor</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Sat 10</span>
+          <div><p class="show-artist">Raahi</p><p class="show-type" style="margin-top:4px">Carnatic Fusion · Live Solo</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Rooftop</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Sun 11</span>
+          <div><p class="show-artist">NINA K</p><p class="show-type" style="margin-top:4px">Jazz · Piano Trio</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Lounge</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Wed 14</span>
+          <div><p class="show-artist">Zara Noor</p><p class="show-type" style="margin-top:4px">Neo-Classical · Piano Solo</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Lounge</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Sat 17</span>
+          <div><p class="show-artist">DJ ATLAS</p><p class="show-type" style="margin-top:4px">House / Progressive · DJ Set</p></div>
+          <span style="font-size:12px;color:var(--warm)">Main Floor</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Sun 18</span>
+          <div><p class="show-artist">NINA K</p><p class="show-type" style="margin-top:4px">Jazz · Piano Trio</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Lounge</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Fri 23</span>
+          <div><p class="show-artist">DJ Kemi</p><p class="show-type" style="margin-top:4px">Afrobeats / Amapiano · DJ Set</p></div>
+          <span style="font-size:12px;color:var(--warm)">Main Floor</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Sat 24</span>
+          <div><p class="show-artist">Raahi</p><p class="show-type" style="margin-top:4px">Carnatic Fusion · Live Solo</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Rooftop</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Wed 28</span>
+          <div><p class="show-artist">Zara Noor</p><p class="show-type" style="margin-top:4px">Neo-Classical · Piano Solo</p></div>
+          <span style="font-size:12px;color:var(--warm)">The Lounge</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+        <div class="show-row">
+          <span class="show-date">Fri 30</span>
+          <div><p class="show-artist">Sable</p><p class="show-type" style="margin-top:4px">Deep House · Late Night (from 1AM)</p></div>
+          <span style="font-size:12px;color:var(--warm)">Main Floor</span>
+          <span style="font-size:12px;color:var(--gold)">May 2025</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <div class="page-body">
+    <div class="two-col">
+      <div>
+        <p class="sub-label">Artist Bookings</p>
+        <h2 class="sub-heading">Want an artist<br>for your <em>event?</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">Our resident and visiting artists are available for private bookings through Wellbeing. We facilitate — the artist decides. If the occasion is interesting to them, they'll say yes. Fill out the form and we'll be in touch within 5 working days.</p>
+        <p class="sub-body" style="margin-top:16px">Artist fees start at ₹50,000 for a solo performance and scale with set length, band size, and date. We take a coordination fee of 15%, which covers logistics, rider management, and making sure everything actually happens as planned.</p>
+      </div>
+      <form class="page-form">
+        <div class="form-field">
+          <label>Your Name &amp; Organisation</label>
+          <input type="text" placeholder="Name / Company / Event">
+        </div>
+        <div class="form-field">
+          <label>Email Address</label>
+          <input type="email" placeholder="email@domain.com">
+        </div>
+        <div class="form-field">
+          <label>Artist You're Interested In</label>
+          <select>
+            <option value="">Select artist</option>
+            <option>DJ Kemi</option>
+            <option>Raahi</option>
+            <option>Sable</option>
+            <option>Zara Noor</option>
+            <option>DJ ATLAS</option>
+            <option>NINA K</option>
+            <option>VERB</option>
+            <option>Open to suggestions</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Event Date</label>
+            <input type="date">
+          </div>
+          <div class="form-field">
+            <label>Budget (approx.)</label>
+            <input type="text" placeholder="e.g. ₹80,000">
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Tell us about the event</label>
+          <textarea rows="4" placeholder="Type of event, venue, audience, what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="cta-gold" style="align-self:flex-start">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Music Programme</h4><p>Wed: Jazz in The Lounge<br>Fri: Residency on Main Floor<br>Sat: Rooftop &amp; Main Floor</p></div>
+        <div class="footer-col"><h4>Bookings</h4><a href="mailto:music@wellbeing.in">music@wellbeing.in</a><a href="index.html#reserve">Reserve a Table</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">The music is never background. Not here.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
