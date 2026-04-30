@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Events — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:65vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; Private Events</p>
+      <h1 class="page-title">Your <em>night.</em><br>Your building.</h1>
+      <p class="page-tagline">We take private events as seriously as our public ones. The room changes. The standard does not.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">Why Wellbeing</p>
+        <h2 class="sub-heading">A venue that <em>works</em><br>for you.</h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">A 1940s textile warehouse doesn't become a luxury venue by accident. Every room here has been designed with intention — acoustics, light, sightlines, the way a crowd moves. When you hire it, you get all of that, plus a team that has spent years perfecting events for people who care deeply about them.</p>
+        <p class="sub-body" style="margin-top:16px">We do not do generic. Tell us what you want the evening to feel like — the rest is ours to figure out.</p>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <!-- SPACES -->
+    <div style="margin-top:80px">
+      <p class="sub-label">Our Spaces</p>
+      <h2 class="sub-heading">Four rooms.<br><em>Infinite</em> possibilities.</h2>
+      <div class="gold-divider"></div>
+      <div class="info-cards" style="margin-top:40px">
+        <div class="info-card">
+          <div class="info-card-icon">☀️</div>
+          <h3>The Rooftop</h3>
+          <p>Open-air on the 9th floor. Retractable roof for monsoon cover. Arabian Sea views. Up to 120 guests seated, 180 standing. The city is your backdrop.</p>
+          <p style="margin-top:12px;font-size:12px;color:var(--gold)">From ₹1,80,000</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">✦</div>
+          <h3>Main Floor</h3>
+          <p>The heartbeat of the building. Original exposed brick, warm lighting, full bar access. Up to 200 guests seated, 300 cocktail-style. The first choice for most people, and we understand why.</p>
+          <p style="margin-top:12px;font-size:12px;color:var(--gold)">From ₹2,50,000</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">◆</div>
+          <h3>The Lounge</h3>
+          <p>Intimate, curated, acoustic. Low seating, warm textures, the building's best sound system. Up to 60 guests. For the event that prioritises conversation and connection.</p>
+          <p style="margin-top:12px;font-size:12px;color:var(--gold)">From ₹90,000</p>
+        </div>
+        <div class="info-card">
+          <div class="info-card-icon">★</div>
+          <h3>Full Venue</h3>
+          <p>All three floors. Pool deck. Every bar. Every room. Up to 400 guests across the building. Reserved for events that demand scale without sacrificing quality. Inquire for availability.</p>
+          <p style="margin-top:12px;font-size:12px;color:var(--gold)">From ₹5,00,000</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- EVENT TYPES -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <p class="sub-label">Event Types</p>
+      <h2 class="sub-heading">We've done <em>all of these.</em><br>And done them well.</h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-top:48px">
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Corporate</p>
+          <p style="font-size:14px;color:var(--warm);line-height:1.7">Annual parties, client dinners, off-sites, product reveals. We configure the room to your agenda, not the other way around. AV, branding, and catering packages included.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Birthdays</p>
+          <p style="font-size:14px;color:var(--warm);line-height:1.7">For the person who doesn't want a "club night" but still wants to dance. Custom menus. A dedicated host. The night starts when you arrive. We handle the rest.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Weddings</p>
+          <p style="font-size:14px;color:var(--warm);line-height:1.7">Receptions, sangeets, engagement parties. The building is dramatic without trying to be. Intimate enough for 60, large enough for 400. We've cried at a few of these. Good tears.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Product Launches</p>
+          <p style="font-size:14px;color:var(--warm);line-height:1.7">Fashion, tech, F&amp;B, luxury goods — the venue signals what your brand wants to signal. Media-ready lighting. Flexible configuration. We've seen some excellent launches here.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Screenings</p>
+          <p style="font-size:14px;color:var(--warm);line-height:1.7">Lounge or Main Floor with projection setup. Film screenings, premieres, documentary debuts. Our sound engineer has done four feature films. It shows in the setup.</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Private Concerts</p>
+          <p style="font-size:14px;color:var(--warm);line-height:1.7">We have a roster of artists who perform privately for the right occasion. Jazz quartets. DJ sets. Classical. Speak to us — if the ask is interesting enough, we'll make it happen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGES -->
+  <div class="page-body">
+    <p class="sub-label">Packages</p>
+    <h2 class="sub-heading">Starting points, <em>not</em><br>ending points.</h2>
+    <p class="sub-body" style="margin-bottom:48px">Everything is customisable. These are frameworks to help you plan. The final number depends on your guest count, food &amp; beverage requirements, and any additional services.</p>
+    <div class="pricing-grid">
+      <div class="price-card">
+        <span class="price-tag-label">The Gathering</span>
+        <div class="price-amount" style="font-size:32px">From ₹90K</div>
+        <p class="price-period">Up to 60 guests · The Lounge</p>
+        <ul class="price-features">
+          <li>4-hour venue hire</li>
+          <li>Welcome drinks (Champagne or cocktail)</li>
+          <li>Curated canapé selection (6 varieties)</li>
+          <li>House DJ or curated playlist</li>
+          <li>Dedicated event host</li>
+          <li>Basic floral arrangement</li>
+        </ul>
+        <a href="#inquire" class="cta-ghost" style="display:block;text-align:center">Enquire</a>
+      </div>
+      <div class="price-card featured">
+        <span class="price-tag-label">The Main Event</span>
+        <div class="price-amount" style="font-size:32px">From ₹2.5L</div>
+        <p class="price-period">Up to 200 guests · Main Floor</p>
+        <ul class="price-features">
+          <li>6-hour venue hire</li>
+          <li>Full bar (premium spirits)</li>
+          <li>Seated dinner or cocktail reception</li>
+          <li>Chef's custom menu (3–5 courses)</li>
+          <li>Live music or DJ (3 hours)</li>
+          <li>Full AV setup</li>
+          <li>Dedicated team of 6</li>
+          <li>Floral &amp; décor package</li>
+        </ul>
+        <a href="#inquire" class="cta-gold" style="display:block;text-align:center">Enquire</a>
+      </div>
+      <div class="price-card">
+        <span class="price-tag-label">The Full House</span>
+        <div class="price-amount" style="font-size:32px">From ₹5L</div>
+        <p class="price-period">Up to 400 guests · Entire Venue</p>
+        <ul class="price-features">
+          <li>Full venue hire (all floors)</li>
+          <li>8-hour run of show</li>
+          <li>Unlimited bar (curated)</li>
+          <li>Full dining service</li>
+          <li>Multiple entertainment acts</li>
+          <li>Complete AV &amp; production</li>
+          <li>Dedicated event manager (your contact)</li>
+          <li>Custom branding &amp; signage</li>
+          <li>Post-event debrief &amp; documentation</li>
+        </ul>
+        <a href="#inquire" class="cta-ghost" style="display:block;text-align:center">Enquire</a>
+      </div>
+    </div>
+
+    <!-- INQUIRY FORM -->
+    <div id="inquire" style="margin-top:80px">
+      <p class="sub-label">Get in Touch</p>
+      <h2 class="sub-heading">Tell us about your <em>event.</em></h2>
+      <p class="sub-body" style="margin-bottom:48px">The more you tell us, the faster we can come back with a proposal that actually makes sense for what you're planning.</p>
+      <form class="page-form" style="max-width:680px">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Your Name</label>
+            <input type="text" placeholder="Full name">
+          </div>
+          <div class="form-field">
+            <label>Email Address</label>
+            <input type="email" placeholder="email@domain.com">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Phone Number</label>
+            <input type="tel" placeholder="+91 98XXX XXXXX">
+          </div>
+          <div class="form-field">
+            <label>Event Type</label>
+            <select>
+              <option value="">Select event type</option>
+              <option>Corporate Event</option>
+              <option>Birthday Celebration</option>
+              <option>Wedding / Reception</option>
+              <option>Product Launch</option>
+              <option>Private Screening</option>
+              <option>Private Concert</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Preferred Date</label>
+            <input type="date">
+          </div>
+          <div class="form-field">
+            <label>Guest Count (Approximate)</label>
+            <select>
+              <option value="">Number of guests</option>
+              <option>Up to 30</option>
+              <option>30 – 60</option>
+              <option>60 – 120</option>
+              <option>120 – 200</option>
+              <option>200 – 400</option>
+              <option>400+</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Budget Range</label>
+          <select>
+            <option value="">Select approximate budget</option>
+            <option>₹50,000 – ₹1,00,000</option>
+            <option>₹1,00,000 – ₹2,50,000</option>
+            <option>₹2,50,000 – ₹5,00,000</option>
+            <option>₹5,00,000+</option>
+            <option>Flexible / Let's discuss</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Tell us about the event</label>
+          <textarea rows="4" placeholder="What's the occasion? What do you want people to feel when they walk in? What's non-negotiable for you?"></textarea>
+        </div>
+        <button type="submit" class="cta-gold" style="align-self:flex-start">Send Enquiry</button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Events Team</h4><p>Available Mon–Sat<br>10AM – 7PM</p></div>
+        <div class="footer-col"><h4>Contact</h4><a href="mailto:events@wellbeing.in">events@wellbeing.in</a><a href="#inquire">Submit Enquiry</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">Your event. Our full attention.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
