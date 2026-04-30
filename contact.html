@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact & Directions — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    .hours-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+    .hours-card { padding: 28px; border: 1px solid var(--border); border-radius: 2px; }
+    .hours-label { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 12px; }
+    .hours-time { font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--cream); font-weight: 300; line-height: 1.4; }
+    .hours-note { font-size: 12px; color: var(--warm); margin-top: 8px; line-height: 1.7; }
+    .contact-dept { padding: 28px; border: 1px solid var(--border); border-radius: 2px; }
+    .dept-name { font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+    .dept-email { font-size: 15px; color: var(--cream); text-decoration: none; display: block; margin-bottom: 6px; }
+    .dept-email:hover { color: var(--gold2); }
+    .dept-note { font-size: 12px; color: var(--warm); line-height: 1.7; }
+    .direction-row { display: flex; gap: 24px; align-items: flex-start; padding: 24px 0; border-bottom: 1px solid rgba(201,169,110,0.06); }
+    .direction-icon { width: 40px; height: 40px; border: 1px solid var(--border); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 18px; flex-shrink: 0; }
+    .direction-title { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 600; color: var(--cream); margin-bottom: 6px; }
+    .direction-desc { font-size: 13px; color: var(--warm); line-height: 1.7; }
+    @media (max-width: 900px) { .hours-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 600px) { .hours-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:60vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1449824913935-59a10b8d2000?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; Contact</p>
+      <h1 class="page-title">Come <em>find us.</em></h1>
+      <p class="page-tagline">We are on the 9th floor of a 1940s textile warehouse in Bandra West. The lift is on the left as you walk in. We'll see you at the top.</p>
+    </div>
+  </section>
+
+  <!-- ADDRESS & HOW TO GET HERE -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">The Address</p>
+        <h2 class="sub-heading">The Loom <em>Building.</em></h2>
+        <div class="gold-divider"></div>
+        <div style="margin-bottom:32px">
+          <p style="font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:300;color:var(--cream);line-height:1.5">9th Floor, The Loom Building<br>16 Hill Road<br>Bandra West<br>Mumbai 400050</p>
+        </div>
+        <p class="sub-body">The building entrance is on Hill Road, between Bandra Gym and the old Carter Road junction. Look for the brass WELLBEING sign at ground level. The reception is on the ground floor — they will direct you to the lift.</p>
+        <p class="sub-body" style="margin-top:16px">No, we don't validate parking. Yes, we recommend not driving.</p>
+
+        <!-- DIRECTIONS -->
+        <div style="margin-top:48px">
+          <p class="sub-label">Getting Here</p>
+          <h2 class="sub-heading">How to <em>arrive.</em></h2>
+          <div class="gold-divider"></div>
+
+          <div class="direction-row" style="border-top:1px solid rgba(201,169,110,0.06)">
+            <div class="direction-icon">🛺</div>
+            <div>
+              <p class="direction-title">By Auto / Taxi</p>
+              <p class="direction-desc">Bandra (W) station to The Loom Building is approximately 7 minutes by auto. Ask for Hill Road, near Carter Road. Ola and Uber are the most reliable options — drop-off is right at the entrance. Auto from Bandra station: ~₹40–60.</p>
+            </div>
+          </div>
+
+          <div class="direction-row">
+            <div class="direction-icon">🚇</div>
+            <div>
+              <p class="direction-title">By Metro</p>
+              <p class="direction-desc">BKC Metro Station (Line 2B) is approximately 12 minutes by auto from the venue. The metro runs until midnight on most days — check the latest schedule. There is no direct metro station in Bandra West yet, but BKC is the closest you'll get.</p>
+            </div>
+          </div>
+
+          <div class="direction-row">
+            <div class="direction-icon">🚗</div>
+            <div>
+              <p class="direction-title">By Car / Valet</p>
+              <p class="direction-desc">Valet parking is available from 8PM at ₹200. Pull up to the ground floor entrance and our team will take it from there. Limited parking in the building — we genuinely recommend not driving, especially on weekends. Street parking on Hill Road is unreliable after 7PM.</p>
+            </div>
+          </div>
+
+          <div class="direction-row">
+            <div class="direction-icon">🚶</div>
+            <div>
+              <p class="direction-title">On Foot</p>
+              <p class="direction-desc">If you're in Bandra, the walk is pleasant — especially on an evening with good weather. From Bandra station, it's a 15–20 minute walk along Hill Road. You'll pass three good cafes, two bad ones, and one building you've photographed before but don't know why.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <!-- MAP PLACEHOLDER -->
+        <div style="height:380px;background:rgba(201,169,110,0.05);border:1px solid var(--border);border-radius:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:32px;margin-bottom:32px">
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:16px">Location</p>
+          <p style="font-family:'Cormorant Garamond',serif;font-size:26px;color:var(--cream);line-height:1.4;margin-bottom:16px">16 Hill Road<br>Bandra West<br>Mumbai</p>
+          <p style="font-size:13px;color:var(--warm);margin-bottom:24px">19.0596° N, 72.8295° E</p>
+          <a href="https://maps.google.com/?q=16+Hill+Road+Bandra+West+Mumbai" target="_blank" rel="noopener" class="cta-ghost" style="font-size:11px">Open in Google Maps</a>
+        </div>
+
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px;background:rgba(201,169,110,0.02)">
+          <p class="sub-label">Parking Note</p>
+          <p style="font-size:15px;color:var(--cream);font-family:'Cormorant Garamond',serif;margin-bottom:12px">We're honest about parking.</p>
+          <p style="font-size:13px;color:var(--warm);line-height:1.8">It is limited. Bandra on a Saturday night is not the place to look for a parking spot. Valet from 8PM (₹200) is available in the building. Otherwise: Uber, Ola, or the autorickshaw you'll find immediately outside the station. The city has a designated driver problem and we'd rather not be part of it.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- HOURS -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <p class="sub-label">When We're Open</p>
+      <h2 class="sub-heading">Hours of <em>operation.</em></h2>
+      <div class="hours-grid">
+        <div class="hours-card">
+          <p class="hours-label">Restaurant & Bar</p>
+          <p class="hours-time">12PM – 3AM<br>Daily</p>
+          <p class="hours-note">Kitchen closes at 12:30AM. Bar stays open until 2AM weekdays, later on weekends.</p>
+        </div>
+        <div class="hours-card">
+          <p class="hours-label">The Rooftop</p>
+          <p class="hours-time">7PM – 1AM<br>Mon–Thu &amp; Sun<br>7PM – 4AM<br>Fri &amp; Sat</p>
+          <p class="hours-note">Reservation required after 9PM. Monsoon: subject to weather.</p>
+        </div>
+        <div class="hours-card">
+          <p class="hours-label">The Pool</p>
+          <p class="hours-time">6:30AM – 10PM<br>Daily<br>Until 1AM<br>Fri &amp; Sat</p>
+          <p class="hours-note">Day passes from ₹800. Pool bar from 12PM.</p>
+        </div>
+        <div class="hours-card">
+          <p class="hours-label">The Spa</p>
+          <p class="hours-time">8AM – 9PM<br>Daily</p>
+          <p class="hours-note">Last booking at 7:30PM. Pre-booking recommended. Walk-ins subject to availability.</p>
+        </div>
+        <div class="hours-card">
+          <p class="hours-label">Events &amp; Enquiries Team</p>
+          <p class="hours-time">Mon – Sat<br>10AM – 7PM</p>
+          <p class="hours-note">For private events, membership, press, and artist bookings.</p>
+        </div>
+        <div class="hours-card">
+          <p class="hours-label">Front Desk</p>
+          <p class="hours-time">Noon – 3AM<br>Daily</p>
+          <p class="hours-note">For reservations, lost &amp; found, general queries. Always staffed during venue hours.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT DEPARTMENTS -->
+  <div class="page-body">
+    <p class="sub-label">Get in Touch</p>
+    <h2 class="sub-heading">The right person<br>for your <em>question.</em></h2>
+    <p class="sub-body" style="margin-bottom:48px">We route emails carefully so you actually get a response from someone who knows the answer.</p>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:80px">
+      <div class="contact-dept">
+        <p class="dept-name">Reservations</p>
+        <a href="mailto:reservations@wellbeing.in" class="dept-email">reservations@wellbeing.in</a>
+        <p class="dept-note">Tables, rooftop bookings, pool day passes, group coordination. Response within 4 hours during operating hours.</p>
+      </div>
+      <div class="contact-dept">
+        <p class="dept-name">Private Events</p>
+        <a href="mailto:events@wellbeing.in" class="dept-email">events@wellbeing.in</a>
+        <p class="dept-note">Venue hire, corporate bookings, birthdays, weddings, product launches. Mon–Sat 10AM–7PM.</p>
+      </div>
+      <div class="contact-dept">
+        <p class="dept-name">Spa &amp; Wellness</p>
+        <a href="mailto:spa@wellbeing.in" class="dept-email">spa@wellbeing.in</a>
+        <p class="dept-note">Treatment bookings, spa packages, memberships, gift cards for spa services. Can also call the front desk.</p>
+      </div>
+      <div class="contact-dept">
+        <p class="dept-name">Membership</p>
+        <a href="mailto:members@wellbeing.in" class="dept-email">members@wellbeing.in</a>
+        <p class="dept-note">Applications, member enquiries, tier upgrades, billing, and any member-specific requests.</p>
+      </div>
+      <div class="contact-dept">
+        <p class="dept-name">Press &amp; Media</p>
+        <a href="mailto:press@wellbeing.in" class="dept-email">press@wellbeing.in</a>
+        <p class="dept-note">Interviews, photography, reviews, collaborations, TV and film enquiries. We respond. Eventually.</p>
+      </div>
+      <div class="contact-dept">
+        <p class="dept-name">General</p>
+        <a href="mailto:hello@wellbeing.in" class="dept-email">hello@wellbeing.in</a>
+        <p class="dept-note">Everything else. Feedback, compliments, complaints, ideas, existential questions. All read. Most replied to.</p>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM -->
+    <div class="two-col">
+      <div>
+        <p class="sub-label">Write to Us</p>
+        <h2 class="sub-heading">The simple <em>form.</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">If email feels too formal and calling feels too immediate, this is the middle ground. We check it throughout the day. It goes to the right person based on the subject line you choose.</p>
+        <p class="sub-body" style="margin-top:16px">We promise not to add you to a mailing list. We only have one newsletter and it comes out when we have something worth saying — which is roughly once a month, sometimes less.</p>
+      </div>
+      <form class="page-form">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Name</label>
+            <input type="text" placeholder="Your name">
+          </div>
+          <div class="form-field">
+            <label>Email</label>
+            <input type="email" placeholder="email@domain.com">
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Subject</label>
+          <select>
+            <option value="">What's this about?</option>
+            <option>Table Reservation</option>
+            <option>Private Event Enquiry</option>
+            <option>Membership Application</option>
+            <option>Spa Booking</option>
+            <option>Artist Booking</option>
+            <option>Press / Media</option>
+            <option>Feedback</option>
+            <option>Something Else</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>Message</label>
+          <textarea rows="5" placeholder="What's on your mind? Be as brief or detailed as you like."></textarea>
+        </div>
+        <button type="submit" class="cta-gold" style="align-self:flex-start">Send Message</button>
+      </form>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Address</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Hours</h4><p>Noon – 3AM daily<br>Kitchen until 12:30AM<br>Bar until late</p></div>
+        <div class="footer-col"><h4>Reach Us</h4><a href="mailto:hello@wellbeing.in">hello@wellbeing.in</a><a href="index.html#reserve">Make a Reservation</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">We are on the 9th floor. The lift is on the left.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
