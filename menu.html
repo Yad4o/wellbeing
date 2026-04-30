@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html" style="color:var(--cream)">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:60vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; Menu</p>
+      <h1 class="page-title">The <em>Table</em></h1>
+      <p class="page-tagline">Indian coastal cuisine, reimagined without apology. Chef Kavya Nair's menu changes with the tide, the season, and her mood.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">The Philosophy</p>
+        <h2 class="sub-heading">Food that <em>earns</em><br>your attention.</h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">We don't do fusion for the sake of it. Chef Kavya Nair grew up eating fish curry in Mangalore and trained in Lyon. The menu is the result of those two places refusing to stay separate. Everything here is from somewhere specific. The Madras prawn. The Goan toddy vinegar. The Andhra chilli that makes you sweat and smile at the same time.</p>
+        <p class="sub-body" style="margin-top:16px">All dishes subject to seasonal change. Allergy and dietary information available on request. We cook with butter, cream, and conviction.</p>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <!-- AMUSE BOUCHE -->
+    <div style="margin-top:80px">
+      <p class="sub-label">To Begin</p>
+      <h2 class="sub-heading"><em>Amuse</em> Bouche</h2>
+      <p class="sub-body" style="margin-bottom:32px">Complimentary. Sent with our compliments and Executive Chef's intentions.</p>
+      <div class="gold-divider"></div>
+      <div class="menu-category" style="margin-top:32px">
+        <div class="menu-item"><div><p class="dish-name">Kokum Rasam Shot</p><p class="dish-desc">Warm Goan kokum broth, curry leaf, cracked black pepper — the palate reset your evening needs</p></div><span class="dish-price">Complimentary</span></div>
+        <div class="menu-item"><div><p class="dish-name">Prawn Vathal Crisp</p><p class="dish-desc">Sun-dried prawn cracker, smoked tamarind gel, micro coriander — two bites, not one</p></div><span class="dish-price">Complimentary</span></div>
+        <div class="menu-item"><div><p class="dish-name">Toddy Shop Butter</p><p class="dish-desc">Cultured butter whipped with Kerala red rice, served with charcoal flatbread — because bread and butter deserve better</p></div><span class="dish-price">Complimentary</span></div>
+      </div>
+    </div>
+
+    <!-- SMALL PLATES -->
+    <div style="margin-top:64px">
+      <p class="sub-label">Small Plates</p>
+      <h2 class="sub-heading">Share or <em>don't.</em></h2>
+      <p class="sub-body" style="margin-bottom:32px">Designed to share. We suggest four between two. You may disagree.</p>
+      <div class="gold-divider"></div>
+      <div class="menu-category" style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:0 40px">
+        <div class="menu-item"><div><p class="dish-name">Nadan Crab Cakes</p><p class="dish-desc">Kerala backwater crab, green mango, curry leaf emulsion, fried shallots</p></div><span class="dish-price">₹680</span></div>
+        <div class="menu-item"><div><p class="dish-name">Mangalorean Ghee Roast Tartlet</p><p class="dish-desc">Chicken ghee roast, sour cream, crispy shallot, warm tart shell</p></div><span class="dish-price">₹580</span></div>
+        <div class="menu-item"><div><p class="dish-name">Charred Cauliflower Poriyal</p><p class="dish-desc">Tandoor-roasted cauliflower, coconut pesto, mustard oil dressing, pomegranate</p></div><span class="dish-price">₹480</span></div>
+        <div class="menu-item"><div><p class="dish-name">Meen Pollichathu Parcel</p><p class="dish-desc">Banana leaf-wrapped Kerala fish, coconut milk reduction, raw mango salsa</p></div><span class="dish-price">₹620</span></div>
+        <div class="menu-item"><div><p class="dish-name">Thattukada Egg Bhurji Toast</p><p class="dish-desc">Masala scrambled eggs, brioche toast, pickled onions — the streets of Kochi in one bite</p></div><span class="dish-price">₹380</span></div>
+        <div class="menu-item"><div><p class="dish-name">Scallop Moilee</p><p class="dish-desc">Seared sea scallop, turmeric coconut broth, appam crisp, caviar of the sea (seasonal)</p></div><span class="dish-price">₹680</span></div>
+      </div>
+    </div>
+
+    <!-- FROM THE FIRE -->
+    <div style="margin-top:64px">
+      <p class="sub-label">Mains</p>
+      <h2 class="sub-heading">From the <em>Fire</em></h2>
+      <p class="sub-body" style="margin-bottom:32px">Served with accompaniments. Slow, hot, and unhurried.</p>
+      <div class="gold-divider"></div>
+      <div class="menu-category" style="margin-top:32px">
+        <div class="menu-item"><div><p class="dish-name">Lobster Thenga Aracha Kari</p><p class="dish-desc">Whole Boston lobster, freshly ground coconut paste, Malabar spices, appam &amp; red rice</p></div><span class="dish-price">₹1,400</span></div>
+        <div class="menu-item"><div><p class="dish-name">Mutton Dalcha</p><p class="dish-desc">Slow-braised Hyderabadi mutton, lentil sauce, fried onion, ghee rice, raita — 6 hour cook, worth the wait</p></div><span class="dish-price">₹980</span></div>
+        <div class="menu-item"><div><p class="dish-name">Black Pepper Crab</p><p class="dish-desc">Mud crab from Bandra market, cracked black pepper, butter, garlic, toasted bun for the gravy</p></div><span class="dish-price">₹1,200</span></div>
+        <div class="menu-item"><div><p class="dish-name">Coastal Duck Vindaloo</p><p class="dish-desc">Aged Goa vinegar, Kashmiri chilli, slow-roasted duck leg, steamed sannas</p></div><span class="dish-price">₹880</span></div>
+        <div class="menu-item"><div><p class="dish-name">Jackfruit Bun Masala</p><p class="dish-desc">Young jackfruit, tomato masala, toasted pav, raw onion, lemon — the vegetarian main that needs no justification</p></div><span class="dish-price">₹780</span></div>
+      </div>
+    </div>
+
+    <!-- DESSERTS -->
+    <div style="margin-top:64px">
+      <p class="sub-label">To Finish</p>
+      <h2 class="sub-heading"><em>Sweet</em> endings.</h2>
+      <div class="gold-divider"></div>
+      <div class="menu-category" style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:0 40px">
+        <div class="menu-item"><div><p class="dish-name">Coconut Pannacotta</p><p class="dish-desc">Set coconut milk, toddy palm jaggery, passion fruit coulis, tuile</p></div><span class="dish-price">₹480</span></div>
+        <div class="menu-item"><div><p class="dish-name">Malabar Banana Tarte Tatin</p><p class="dish-desc">Caramelised nendran banana, salted butter caramel, Malabar vanilla ice cream</p></div><span class="dish-price">₹520</span></div>
+        <div class="menu-item"><div><p class="dish-name">Dark Chocolate &amp; Cardamom Fondant</p><p class="dish-desc">72% Coorg cacao, green cardamom centre, clotted cream — arrives in exactly 14 minutes</p></div><span class="dish-price">₹620</span></div>
+        <div class="menu-item"><div><p class="dish-name">Payasam Trio</p><p class="dish-desc">Ada, semiya, and rice payasam — three versions, three generations, all made the traditional way</p></div><span class="dish-price">₹420</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- WINE & DRINKS -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <p class="sub-label">The List</p>
+      <h2 class="sub-heading">Wine &amp; <em>Non-Alcoholic</em></h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 80px;margin-top:48px">
+        <div>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:24px">Wine List</p>
+          <div class="menu-item"><div><p class="dish-name">Sula Rasa Sauvignon Blanc</p><p class="dish-desc">Nashik, Maharashtra — crisp, grassy, pairs with crab &amp; seafood</p></div><span class="dish-price">₹620</span></div>
+          <div class="menu-item"><div><p class="dish-name">Grover Zampa La Réserve Blanc</p><p class="dish-desc">Nandi Hills, Karnataka — full-bodied, tropical notes, excellent with moilee</p></div><span class="dish-price">₹780</span></div>
+          <div class="menu-item"><div><p class="dish-name">Fratelli Sette Rosso</p><p class="dish-desc">Solapur, Maharashtra — Sangiovese blend, earthy, bold, made for the Vindaloo</p></div><span class="dish-price">₹840</span></div>
+          <div class="menu-item"><div><p class="dish-name">Chateau Indage Chardonnay</p><p class="dish-desc">Narayangaon — unoaked, clean, the purist's choice</p></div><span class="dish-price">₹720</span></div>
+          <div class="menu-item"><div><p class="dish-name">York Winery Arros Red</p><p class="dish-desc">Nashik — Shiraz, Cabernet, dark fruit, long finish</p></div><span class="dish-price">₹880</span></div>
+          <div class="menu-item"><div><p class="dish-name">Chandon India Brut</p><p class="dish-desc">Nashik — sparkling, light, festive without trying too hard</p></div><span class="dish-price">₹960</span></div>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:24px">Non-Alcoholic</p>
+          <div class="menu-item"><div><p class="dish-name">Nannari Sherbet</p><p class="dish-desc">Indian sarsaparilla root syrup, lime, soda, rose water — a summer in a glass</p></div><span class="dish-price">₹280</span></div>
+          <div class="menu-item"><div><p class="dish-name">Bael Fruit Cooler</p><p class="dish-desc">Wood apple, jaggery, ginger, soda — digestive and delicious, often confused for something else</p></div><span class="dish-price">₹320</span></div>
+          <div class="menu-item"><div><p class="dish-name">Spiced Buttermilk</p><p class="dish-desc">Fresh curd, roasted jeera, green chilli, curry leaf — what your grandmother would prescribe</p></div><span class="dish-price">₹240</span></div>
+          <div class="menu-item"><div><p class="dish-name">Cold Brew Filter Coffee</p><p class="dish-desc">Coorg Arabica, 18-hour steep, served black over ice — for those who eat seriously</p></div><span class="dish-price">₹360</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Dining Hours</h4><p>Lunch: 12PM – 3:30PM<br>Dinner: 7PM – 1AM<br>Kitchen closes at 12:30AM</p></div>
+        <div class="footer-col"><h4>Reservations</h4><a href="index.html#reserve">Book a Table</a><a href="mailto:dining@wellbeing.in">dining@wellbeing.in</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">The menu changes. The standard doesn't.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
