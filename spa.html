@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Ritual — Spa — WELLBEING</title>
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html" style="color:var(--cream)">Spa</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="membership.html">Membership</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay"><ul>
+    <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+    <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+    <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+  </ul></div>
+
+  <section class="page-hero" style="min-height:65vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1544161515-4ab6ce6db874?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> / The Ritual</p>
+      <h1 class="page-title">The <em>Ritual</em></h1>
+      <p class="page-tagline">Our spa. Named for what it becomes when you come regularly.</p>
+    </div>
+  </section>
+
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">About The Ritual</p>
+        <h2 class="sub-heading">Slow down.<br><em>Deliberately.</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">The Ritual occupies the entire 7th floor. Six treatment rooms, a steam room, a cold plunge, and a relaxation lounge with floor-to-ceiling views. Our therapists are trained in Ayurvedic, Swedish, and deep tissue techniques — blended into treatments you won't find anywhere else in the city.</p>
+        <p class="sub-body" style="margin-top:16px">We use only Subtle Energies and Forest Essentials products. No synthetic fragrances. No shortcuts.</p>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1600334129128-685c5582fd35?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <div class="info-cards" style="margin-top:80px">
+      <div class="info-card"><div class="info-card-icon">🕯️</div><h3>Signature Treatments</h3><p>Our exclusive blends, developed over two years. Indian botanical ingredients, ancient techniques, modern outcomes.</p></div>
+      <div class="info-card"><div class="info-card-icon">🧊</div><h3>Cold Plunge & Steam</h3><p>Hydrotherapy circuit — 15 minutes of alternating heat and cold. Reduces inflammation, resets the nervous system.</p></div>
+      <div class="info-card"><div class="info-card-icon">🌿</div><h3>Couples Suite</h3><p>Our largest room with private steam shower, dual treatment beds, and a champagne service. Perfect for special occasions.</p></div>
+    </div>
+  </div>
+
+  <section class="page-section" style="background:var(--black2)">
+    <div class="inner">
+      <p class="sub-label">Treatment Menu</p>
+      <h2 class="sub-heading">Choose your <em>ritual.</em></h2>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:48px">
+        <div>
+          <h4 class="menu-category">Body Treatments</h4>
+          <div class="menu-item"><div><p class="dish-name">The Deep Reset</p><p class="dish-desc">Deep tissue full-body massage. 90 minutes. Tension knots dissolved.</p></div><span class="dish-price">₹4200</span></div>
+          <div class="menu-item"><div><p class="dish-name">Abhyanga</p><p class="dish-desc">Traditional Ayurvedic oil massage. Warm herb-infused oils. 60 or 90 minutes.</p></div><span class="dish-price">₹3500</span></div>
+          <div class="menu-item"><div><p class="dish-name">Hot Stone Journey</p><p class="dish-desc">Basalt stones, warm oil, long gliding strokes. 75 minutes.</p></div><span class="dish-price">₹4800</span></div>
+          <div class="menu-item"><div><p class="dish-name">The Couple's Ritual</p><p class="dish-desc">Side-by-side Swedish massage in the couples suite. 90 minutes, champagne included.</p></div><span class="dish-price">₹9500</span></div>
+        </div>
+        <div>
+          <h4 class="menu-category">Face & Head</h4>
+          <div class="menu-item"><div><p class="dish-name">The Glow Facial</p><p class="dish-desc">Forest Essentials actives, jade roller, lymphatic drainage. 60 minutes.</p></div><span class="dish-price">₹3800</span></div>
+          <div class="menu-item"><div><p class="dish-name">Shirodhara</p><p class="dish-desc">Warm oil poured steadily over the forehead. The deepest relaxation known to Ayurveda.</p></div><span class="dish-price">₹5200</span></div>
+          <div class="menu-item"><div><p class="dish-name">Scalp & Neck Revival</p><p class="dish-desc">45 minutes of focused scalp massage, neck decompression, warm oil treatment.</p></div><span class="dish-price">₹2400</span></div>
+          <div class="menu-item"><div><p class="dish-name">Eye Rescue</p><p class="dish-desc">Cooling eye treatment, de-puffing ritual. For those who close early most nights — and us.</p></div><span class="dish-price">₹1800</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-body">
+    <div class="two-col">
+      <div>
+        <p class="sub-label">Book Your Treatment</p>
+        <h2 class="sub-heading">Make a <em>booking.</em></h2>
+        <p class="sub-body" style="margin-bottom:32px">Treatments should be booked at least 24 hours in advance. Cancellations within 6 hours are charged at 50%.</p>
+        <form class="page-form" onsubmit="event.preventDefault();this.innerHTML='<p style=\'color:var(--gold);font-family:Cormorant Garamond,serif;font-size:20px;font-style:italic\'>✦ Your ritual is confirmed. We\'ll be in touch.</p>'">
+          <div class="form-row">
+            <div class="form-field"><label>Name</label><input type="text" placeholder="Your name" required></div>
+            <div class="form-field"><label>Phone</label><input type="tel" placeholder="+91 00000 00000" required></div>
+          </div>
+          <div class="form-row">
+            <div class="form-field"><label>Treatment</label><select><option>The Deep Reset — ₹4200</option><option>Abhyanga — ₹3500</option><option>Hot Stone Journey — ₹4800</option><option>The Glow Facial — ₹3800</option><option>Shirodhara — ₹5200</option><option>The Couple's Ritual — ₹9500</option></select></div>
+            <div class="form-field"><label>Preferred Date & Time</label><input type="datetime-local" required></div>
+          </div>
+          <div class="form-field"><label>Special requests or health notes</label><textarea placeholder="Injuries, allergies, preferences..." rows="3"></textarea></div>
+          <button type="submit" class="cta-gold" style="width:fit-content">Confirm Booking</button>
+        </form>
+      </div>
+      <div>
+        <p class="sub-label">Policies</p>
+        <h2 class="sub-heading">Good to <em>know.</em></h2>
+        <ul class="rules-list" style="margin-top:24px">
+          <li><span class="rule-icon">✦</span>Please arrive 15 minutes before your appointment to change and decompress in the relaxation lounge.</li>
+          <li><span class="rule-icon">✦</span>Mobile phones are not permitted in the spa beyond the reception area.</li>
+          <li><span class="rule-icon">✦</span>We do not offer treatments to guests who are intoxicated.</li>
+          <li><span class="rule-icon">✦</span>Pregnant guests should inform us at booking — some treatments are adjusted or unavailable.</li>
+          <li><span class="rule-icon">✦</span>Gratuity is at your discretion and entirely separate from the treatment charge.</li>
+          <li><span class="rule-icon">✦</span>The hydrotherapy circuit (steam + cold plunge) is complimentary with any treatment of 60 min or more.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Location</h4><p>7th Floor, The Loom Building<br>Bandra West, Mumbai</p></div>
+        <div class="footer-col"><h4>Spa Hours</h4><p>Daily 9AM – 10PM<br>Last booking at 8PM</p></div>
+        <div class="footer-col"><h4>Contact</h4><a href="#">ritual@wellbeing.in</a><a href="#">+91 98765 43210</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">The Ritual. 7th floor.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
