@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WELLBEING — Resto Bar & Club</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- CURSOR -->
+  <div id="cursor"></div>
+  <div id="cursor-trail"></div>
+
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-logo">WELL<span>BEING</span></div>
+    <div class="loader-bar"><div class="loader-fill"></div></div>
+  </div>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <a href="#" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#nights">Nights</a></li>
+      <li><a href="#table">The Table</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#artists">Artists</a></li>
+    </ul>
+    <a href="#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger">
+      <span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="#experience" onclick="closeMenu()">Experience</a></li>
+      <li><a href="#nights" onclick="closeMenu()">Nights</a></li>
+      <li><a href="#table" onclick="closeMenu()">The Table</a></li>
+      <li><a href="#gallery" onclick="closeMenu()">Gallery</a></li>
+      <li><a href="#artists" onclick="closeMenu()">Artists</a></li>
+      <li><a href="#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-bg-img"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Est. 2019 · Mumbai</p>
+      <h1 class="hero-title">
+        <span class="line line-1">Where the</span>
+        <span class="line line-2 italic">night</span>
+        <span class="line line-3">finds you.</span>
+      </h1>
+      <p class="hero-sub">Rooftop dining. Underground sounds. No dress code — only presence.</p>
+      <div class="hero-ctas">
+        <a href="#reserve" class="cta-gold">Book a Table</a>
+        <a href="#experience" class="cta-ghost">Discover More</a>
+      </div>
+    </div>
+    <div class="hero-scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+    <div class="hero-ticker">
+      <div class="ticker-inner">
+        <span>WELLBEING</span><span>·</span>
+        <span>ROOFTOP DINING</span><span>·</span>
+        <span>UNDERGROUND SOUNDS</span><span>·</span>
+        <span>MUMBAI</span><span>·</span>
+        <span>OPEN WED–SAT</span><span>·</span>
+        <span>WELLBEING</span><span>·</span>
+        <span>ROOFTOP DINING</span><span>·</span>
+        <span>UNDERGROUND SOUNDS</span><span>·</span>
+        <span>MUMBAI</span><span>·</span>
+        <span>OPEN WED–SAT</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="exp-grid">
+      <div class="exp-text">
+        <p class="section-no">01</p>
+        <h2 class="section-heading">Not just a<br><em>night out.</em></h2>
+        <p class="body-text">Wellbeing lives on the 9th floor of a converted textile warehouse in Bandra. Three floors. One rooftop. A kitchen that doesn't close until 2am. We built this for the people who eat well, drink slowly, and dance until the city goes quiet.</p>
+        <p class="body-text" style="margin-top:16px">We don't do VIP tables. We do experiences.</p>
+        <div class="exp-stats">
+          <div class="exp-stat"><span>9th</span><p>Floor</p></div>
+          <div class="exp-stat"><span>3</span><p>Spaces</p></div>
+          <div class="exp-stat"><span>2AM</span><p>Last orders</p></div>
+        </div>
+      </div>
+      <div class="exp-img-col">
+        <div class="exp-img exp-img-1"></div>
+        <div class="exp-img exp-img-2"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NIGHTS -->
+  <section id="nights" class="section section-dark">
+    <div class="container">
+      <p class="section-no">02</p>
+      <h2 class="section-heading">The <em>Nights</em></h2>
+      <p class="section-sub">Every night is a different world. Same address. Never the same twice.</p>
+      <div class="nights-grid">
+        <div class="night-card" data-day="WED">
+          <div class="night-img night-img-1"></div>
+          <div class="night-info">
+            <div class="night-day">Wednesday</div>
+            <h3>SLOW BURN</h3>
+            <p>Jazz, soul, and neo-soul. The week's midpoint — unhurried, warm, and dark as molasses. Guest vocalists every fortnight.</p>
+            <div class="night-meta">
+              <span>10PM – 2AM</span>
+              <span>₹800 entry</span>
+            </div>
+          </div>
+        </div>
+        <div class="night-card" data-day="THU">
+          <div class="night-img night-img-2"></div>
+          <div class="night-info">
+            <div class="night-day">Thursday</div>
+            <h3>VOLTAGE</h3>
+            <p>Afrobeats, Amapiano, Afropop. The sound that makes you forget your shoes. Resident DJ Kemi holds it down.</p>
+            <div class="night-meta">
+              <span>10PM – 3AM</span>
+              <span>₹1000 entry</span>
+            </div>
+          </div>
+        </div>
+        <div class="night-card featured-night" data-day="FRI">
+          <div class="night-img night-img-3"></div>
+          <div class="night-info">
+            <div class="night-tag">Flagship Night</div>
+            <div class="night-day">Friday</div>
+            <h3>WELLBEING</h3>
+            <p>This is the one. Deep house, tech house, minimal. The full venue opens. Rooftop til sunrise. Door selection applies.</p>
+            <div class="night-meta">
+              <span>11PM – 5AM</span>
+              <span>₹1800 entry</span>
+            </div>
+          </div>
+        </div>
+        <div class="night-card" data-day="SAT">
+          <div class="night-img night-img-4"></div>
+          <div class="night-info">
+            <div class="night-day">Saturday</div>
+            <h3>SIGNAL</h3>
+            <p>Electronic. Industrial. Techno. Our darkest, loudest night. Earplugs at the door. The subwoofers were custom-built for this room.</p>
+            <div class="night-meta">
+              <span>11PM – 6AM</span>
+              <span>₹2000 entry</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- THE TABLE -->
+  <section id="table" class="section">
+    <div class="container">
+      <p class="section-no">03</p>
+      <h2 class="section-heading">The <em>Table</em></h2>
+      <p class="section-sub">Modern Indian coastal kitchen. Small plates, big flavours. The bar stays open long after the kitchen closes.</p>
+      <div class="table-layout">
+        <div class="menu-col">
+          <h4 class="menu-category">To Begin</h4>
+          <div class="menu-item">
+            <div>
+              <p class="dish-name">Charred Corn Chaat</p>
+              <p class="dish-desc">Smoked yoghurt, tamarind gel, puffed amaranth</p>
+            </div>
+            <span class="dish-price">₹420</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <p class="dish-name">Kingfish Crudo</p>
+              <p class="dish-desc">Coconut leche de tigre, green chilli oil, crispy shallots</p>
+            </div>
+            <span class="dish-price">₹680</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <p class="dish-name">Truffle Naan Board</p>
+              <p class="dish-desc">Black truffle, aged ghee, roasted garlic butter, sea salt</p>
+            </div>
+            <span class="dish-price">₹540</span>
+          </div>
+          <h4 class="menu-category" style="margin-top:32px">From the Fire</h4>
+          <div class="menu-item">
+            <div>
+              <p class="dish-name">Lamb Sheekh</p>
+              <p class="dish-desc">Smoked paprika, saffron yoghurt, pickled onion, roti</p>
+            </div>
+            <span class="dish-price">₹890</span>
+          </div>
+          <div class="menu-item">
+            <div>
+              <p class="dish-name">Malabar Prawn Moilee</p>
+              <p class="dish-desc">Coconut broth, turmeric, kaffir lime, steamed rice</p>
+            </div>
+            <span class="dish-price">₹1100</span>
+          </div>
+        </div>
+        <div class="bar-col">
+          <div class="bar-img"></div>
+          <h4 class="menu-category">Signatures</h4>
+          <div class="cocktail-item">
+            <p class="dish-name">The Wellbeing</p>
+            <p class="dish-desc">Gin, elderflower, yuzu, activated charcoal foam</p>
+            <span class="dish-price">₹750</span>
+          </div>
+          <div class="cocktail-item">
+            <p class="dish-name">Bombay After Dark</p>
+            <p class="dish-desc">Dark rum, tamarind, fresh lime, smoked salt rim</p>
+            <span class="dish-price">₹680</span>
+          </div>
+          <div class="cocktail-item">
+            <p class="dish-name">Signal Fire</p>
+            <p class="dish-desc">Mezcal, rose, cardamom, fresh blood orange</p>
+            <span class="dish-price">₹820</span>
+          </div>
+          <div class="cocktail-item">
+            <p class="dish-name">The Long Goodbye</p>
+            <p class="dish-desc">Aged whisky, black sesame orgeat, coconut water, ice sphere</p>
+            <span class="dish-price">₹950</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section id="gallery" class="section section-dark">
+    <div class="container">
+      <p class="section-no">04</p>
+      <h2 class="section-heading">Inside <em>Wellbeing</em></h2>
+    </div>
+    <div class="gallery-strip">
+      <div class="gallery-item g1"></div>
+      <div class="gallery-item g2"></div>
+      <div class="gallery-item g3"></div>
+      <div class="gallery-item g4"></div>
+      <div class="gallery-item g5"></div>
+      <div class="gallery-item g6"></div>
+    </div>
+  </section>
+
+  <!-- ARTISTS -->
+  <section id="artists" class="section">
+    <div class="container">
+      <p class="section-no">05</p>
+      <h2 class="section-heading">The <em>Artists</em></h2>
+      <p class="section-sub">Our residents. The people who make the rooms move.</p>
+      <div class="artists-grid">
+        <div class="artist-card">
+          <div class="artist-img artist-img-1"></div>
+          <div class="artist-info">
+            <h3>DJ KEMI</h3>
+            <p class="artist-genre">Afrobeats · Amapiano</p>
+            <p>Lagos-born, Mumbai-based. Kemi has been the heartbeat of Voltage since day one. Expect sweat.</p>
+          </div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-img artist-img-2"></div>
+          <div class="artist-info">
+            <h3>RAAHI</h3>
+            <p class="artist-genre">Deep House · Minimal</p>
+            <p>The architect of Friday nights. Raahi's sets are marathon journeys — he takes you somewhere you've never been.</p>
+          </div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-img artist-img-3"></div>
+          <div class="artist-info">
+            <h3>SABLE</h3>
+            <p class="artist-genre">Techno · Industrial</p>
+            <p>Berlin-trained, uncompromising. Sable built the Signal night from scratch and has been the loudest voice in the room since.</p>
+          </div>
+        </div>
+        <div class="artist-card">
+          <div class="artist-img artist-img-4"></div>
+          <div class="artist-info">
+            <h3>ZARA NOOR</h3>
+            <p class="artist-genre">Jazz · Neo-Soul · Live</p>
+            <p>Vocalist, composer, force of nature. Zara's Slow Burn residency has a 3-month waiting list. Come early.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVE -->
+  <section id="reserve" class="section section-reserve">
+    <div class="container reserve-container">
+      <p class="section-no light">06</p>
+      <h2 class="section-heading light">Make your<br><em>reservation.</em></h2>
+      <p class="section-sub light">Tables fill up fast on Fridays and Saturdays. We hold reservations for 15 minutes after the booked time.</p>
+      <form class="reserve-form" onsubmit="handleReserve(event)">
+        <div class="form-row">
+          <div class="form-field">
+            <label>Full Name</label>
+            <input type="text" placeholder="Your name" required>
+          </div>
+          <div class="form-field">
+            <label>Phone</label>
+            <input type="tel" placeholder="+91 00000 00000" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-field">
+            <label>Date</label>
+            <input type="date" required>
+          </div>
+          <div class="form-field">
+            <label>Guests</label>
+            <select>
+              <option>2 guests</option>
+              <option>3–4 guests</option>
+              <option>5–6 guests</option>
+              <option>7+ guests</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Space</label>
+          <div class="space-options">
+            <label class="space-opt"><input type="radio" name="space" value="rooftop" checked> Rooftop Dining</label>
+            <label class="space-opt"><input type="radio" name="space" value="main"> Main Floor</label>
+            <label class="space-opt"><input type="radio" name="space" value="lounge"> Lower Lounge</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label>Anything else?</label>
+          <textarea placeholder="Special occasions, dietary requirements, requests…" rows="3"></textarea>
+        </div>
+        <button type="submit" class="cta-gold">Confirm Reservation</button>
+      </form>
+      <div id="reserve-success" style="display:none" class="reserve-success">
+        <p>✦ We have your table. See you soon.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col">
+          <h4>Visit</h4>
+          <p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p>
+        </div>
+        <div class="footer-col">
+          <h4>Hours</h4>
+          <p>Wednesday – Thursday<br>8PM – 2AM</p>
+          <p style="margin-top:8px">Friday – Saturday<br>8PM – 6AM</p>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="#">Instagram</a>
+          <a href="#">Resident Advisor</a>
+          <a href="#">Spotify</a>
+          <a href="#">reservations@wellbeing.in</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Wellbeing. All rights reserved.</p>
+      <p class="footer-note">We reserve the right of admission. No firearms, no hate, no bullshit.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
