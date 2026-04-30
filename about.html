@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:70vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1543007630-9710e4a00a20?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; Our Story</p>
+      <h1 class="page-title">Built for the <em>night</em><br>that stays with you.</h1>
+      <p class="page-tagline">Founded in 2019 by two people who wanted something that didn't exist yet. Five years later, it still doesn't exist anywhere else.</p>
+    </div>
+  </section>
+
+  <!-- FOUNDING STORY -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">The Origin</p>
+        <h2 class="sub-heading">Mumbai needed <em>this.</em><br>We just built it.</h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">Arjun Malhotra and Priya Sethna met at Soho House Mumbai's opening night in 2015. Both had spent years at private members clubs in London, Berlin, and New York. Both had the same conversation on the drive home: Mumbai deserves this, but it deserves a version that is actually Indian. Not imported. Not aspirationally foreign. Indian.</p>
+        <p class="sub-body" style="margin-top:16px">It took four years to find the right building, the right team, and the right conviction. The Loom Building — a 1940s textile warehouse in Bandra West, eight floors of exposed brick and industrial bones — became Wellbeing in October 2019. Six days before the world changed. They stayed open through all of it.</p>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <!-- PHILOSOPHY -->
+    <div style="margin-top:80px;padding:60px;border:1px solid var(--border);border-radius:2px;background:rgba(201,169,110,0.02);text-align:center">
+      <p class="sub-label" style="text-align:center">The Philosophy</p>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:clamp(32px,4vw,56px);font-weight:300;color:var(--cream);max-width:700px;margin:0 auto 24px;line-height:1.15">Anti-VIP table.<br><em>Pro-experience.</em></h2>
+      <p style="font-size:16px;color:var(--warm);max-width:560px;margin:0 auto;line-height:1.9">We don't reserve the best table for the most famous person in the room. We give the best table to whoever booked it first. Fame is a distraction from the food. We like food more than fame.</p>
+    </div>
+
+    <!-- THE BUILDING -->
+    <div class="two-col" style="margin-top:80px">
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1524634126442-357e0eac3c14?w=900&q=80&auto=format&fit=crop')"></div>
+      <div>
+        <p class="sub-label">The Building</p>
+        <h2 class="sub-heading">A 1940s warehouse<br><em>reimagined.</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">The Loom Building was built in 1943 as part of Bandra's textile manufacturing district. When Arjun and Priya found it in 2017, it was a partially demolished shell — the floors were there, the bones were perfect, and the address was everything.</p>
+        <p class="sub-body" style="margin-top:16px">The renovation took 26 months. They kept everything structurally original — the brick, the columns, the ceiling height. They added everything experiential — the pool on the 8th floor, the rooftop on the 9th, the spa on the 7th. The result is a building that feels both very old and entirely new.</p>
+        <div style="display:flex;gap:40px;margin-top:32px">
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">1943</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Built</p></div>
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">9</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Floors</p></div>
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">2019</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Opened</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- TEAM -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <p class="sub-label">The People</p>
+      <h2 class="sub-heading">The team that makes it <em>real.</em></h2>
+      <p class="sub-body" style="margin-bottom:48px">We don't hire for credentials. We hire for obsession. Everyone here is obsessed with something specific, and it shows.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px">
+        <div style="display:flex;gap:32px;align-items:flex-start">
+          <div style="width:80px;height:80px;border-radius:50%;background-image:url('https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80&auto=format&fit=crop');background-size:cover;background-position:center;flex-shrink:0;filter:brightness(0.9)"></div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--cream)">Kavya Nair</p>
+            <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:6px 0 12px">Executive Chef</p>
+            <p style="font-size:13px;color:var(--warm);line-height:1.7">Grew up in Mangalore. Trained in Lyon at Institut Paul Bocuse. Returned to India with a mission: prove that coastal Indian food is one of the great cuisines of the world. The menu at Wellbeing is that proof.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:32px;align-items:flex-start">
+          <div style="width:80px;height:80px;border-radius:50%;background-image:url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=200&q=80&auto=format&fit=crop');background-size:cover;background-position:center;flex-shrink:0;filter:brightness(0.9)"></div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--cream)">Marcus DeSouza</p>
+            <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:6px 0 12px">Bar Director</p>
+            <p style="font-size:13px;color:var(--warm);line-height:1.7">Goan by birth, bartender by calling. Spent a decade in London at Artesian and Dukes before coming home. His cocktail menu has been described as "the most intelligent list in Mumbai" by Time Out. He'd say it's just honest.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:32px;align-items:flex-start">
+          <div style="width:80px;height:80px;border-radius:50%;background-image:url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=200&q=80&auto=format&fit=crop');background-size:cover;background-position:center;flex-shrink:0;filter:brightness(0.9)"></div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--cream)">Lara Mehta</p>
+            <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:6px 0 12px">Creative Director</p>
+            <p style="font-size:13px;color:var(--warm);line-height:1.7">Former art director at Vogue India, creative lead for three luxury hotel openings. Responsible for everything visual at Wellbeing — from the font on the menu to the way the light hits the bar at 9PM. Details are her religion.</p>
+          </div>
+        </div>
+        <div style="display:flex;gap:32px;align-items:flex-start">
+          <div style="width:80px;height:80px;border-radius:50%;background-image:url('https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&q=80&auto=format&fit=crop');background-size:cover;background-position:center;flex-shrink:0;filter:brightness(0.9)"></div>
+          <div>
+            <p style="font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:300;color:var(--cream)">Arjun Malhotra</p>
+            <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin:6px 0 12px">Co-Founder</p>
+            <p style="font-size:13px;color:var(--warm);line-height:1.7">Former member of Soho House London, Berlin, and Mumbai. Spent 15 years in hospitality consulting before founding Wellbeing. Spends most evenings on the ground floor. Will talk to you about music for much longer than you expected.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRESS -->
+  <div class="page-body">
+    <p class="sub-label">Press</p>
+    <h2 class="sub-heading">What they <em>said.</em></h2>
+    <div class="gold-divider"></div>
+    <div style="display:flex;flex-direction:column;gap:32px;margin-top:40px;max-width:760px">
+      <div style="padding:32px;border-left:2px solid var(--gold);padding-left:32px">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:var(--cream);line-height:1.5;margin-bottom:16px">"The kind of venue that makes you embarrassed it took you this long to visit. Wellbeing is setting a new benchmark for what dining in Mumbai can be."</p>
+        <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)">Condé Nast Traveller India, 2023</p>
+      </div>
+      <div style="padding:32px;border-left:2px solid var(--gold);padding-left:32px">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:var(--cream);line-height:1.5;margin-bottom:16px">"Kavya Nair's menu is the most argued-about in the city right now, and for good reason. This is coastal Indian cooking at a level we haven't seen before."</p>
+        <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)">Time Out Mumbai, Best New Restaurant 2022</p>
+      </div>
+      <div style="padding:32px;border-left:2px solid var(--gold);padding-left:32px">
+        <p style="font-family:'Cormorant Garamond',serif;font-size:22px;font-style:italic;color:var(--cream);line-height:1.5;margin-bottom:16px">"If you've been wondering where Mumbai's creative class actually goes on a Friday night — it's here."</p>
+        <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold)">GQ India, The List 2024</p>
+      </div>
+    </div>
+    <div style="margin-top:48px;display:flex;gap:32px;flex-wrap:wrap">
+      <a href="mailto:press@wellbeing.in" class="cta-ghost">Press Enquiries</a>
+      <a href="index.html#reserve" class="cta-gold">Make a Reservation</a>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Founded</h4><p>October 2019<br>By Arjun Malhotra &amp; Priya Sethna</p></div>
+        <div class="footer-col"><h4>Press</h4><a href="mailto:press@wellbeing.in">press@wellbeing.in</a><a href="index.html#reserve">Reserve a Table</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">The building has been here since 1943. We plan to stay a while.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
