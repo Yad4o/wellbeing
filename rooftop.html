@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Rooftop — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:75vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1519690889869-e705e59f72e1?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; The Rooftop</p>
+      <h1 class="page-title">Nine floors<br>above <em>everything.</em></h1>
+      <p class="page-tagline">Open-air on the 9th floor. Arabian Sea visible from the east edge. The city audible but not overwhelming. This is the room you remember.</p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">The Space</p>
+        <h2 class="sub-heading">Open air. All year.<br><em>Weather permitting.</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">The rooftop is the newest part of the building — added in the 2021 expansion — and has become the venue's most requested space. It sits on the 9th floor, directly above the main dining room. The view includes the Bandra-Kurla skyline to the north and a sliver of the Arabian Sea to the west on clear evenings.</p>
+        <p class="sub-body" style="margin-top:16px">The retractable roof was installed specifically for Mumbai's monsoon season (June–September). When the rain is heavy, the roof closes automatically and guests move to the main floor with full service continuity. When the rain is light, we leave it open. The petrichor is part of the experience.</p>
+        <div style="display:flex;gap:48px;margin-top:40px">
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">80</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Seated</p></div>
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">150</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Standing</p></div>
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">9th</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Floor</p></div>
+        </div>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1546519638-68e109498ffc?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <!-- DINING & HOURS -->
+    <div class="info-cards" style="margin-top:80px">
+      <div class="info-card">
+        <div class="info-card-icon">🌆</div>
+        <h3>Open Air Dinner</h3>
+        <p>Rooftop dinner service runs from 7PM every evening. The full Wellbeing menu is available. Tables are set with linen, candles, and a view that does most of the work for us.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🌙</div>
+        <h3>Friday & Saturday Nights</h3>
+        <p>The rooftop stays open until 4AM on Friday and Saturday. After 10PM it transitions to a cocktail-lounge format. Music stays below 80dB — this is a rooftop, not a rooftop club.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">☁️</div>
+        <h3>Monsoon Policy</h3>
+        <p>The retractable roof closes automatically when rainfall exceeds 3mm/hr. Guests are moved to the main floor — same service, same team, different view. We'll top up your drink for the inconvenience.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- GALLERY STRIP -->
+  <section style="padding:0 0 80px;overflow:hidden">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:4px">
+      <div style="height:300px;background-image:url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?w=600&q=80&auto=format&fit=crop');background-size:cover;background-position:center;filter:brightness(0.8)"></div>
+      <div style="height:300px;background-image:url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80&auto=format&fit=crop');background-size:cover;background-position:center;filter:brightness(0.8)"></div>
+      <div style="height:300px;background-image:url('https://images.unsplash.com/photo-1470337458703-46ad1756a187?w=600&q=80&auto=format&fit=crop');background-size:cover;background-position:center;filter:brightness(0.8)"></div>
+      <div style="height:300px;background-image:url('https://images.unsplash.com/photo-1519225421980-715cb0215aed?w=600&q=80&auto=format&fit=crop');background-size:cover;background-position:center;filter:brightness(0.8)"></div>
+    </div>
+  </section>
+
+  <!-- RESERVATION POLICY -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <div class="two-col">
+        <div>
+          <p class="sub-label">How to Get Here</p>
+          <h2 class="sub-heading">Reservations &amp;<br><em>Policies</em></h2>
+          <div class="gold-divider"></div>
+          <p class="sub-body">The rooftop operates as a separate reservation from the main dining room. Dinner reservations are available until 9PM. After 9PM, rooftop access requires an existing reservation or member status.</p>
+          <p class="sub-body" style="margin-top:16px">Walk-ins are possible before 9PM subject to availability. After 9PM, the door closes to walk-ins. This is not a policy we apologise for — it's how we keep the space what it is.</p>
+          <ul class="rules-list" style="margin-top:32px">
+            <li><span class="rule-icon">✦</span> Reservations open 30 days in advance for members, 14 days for general guests.</li>
+            <li><span class="rule-icon">✦</span> After 9PM: reservation or membership required.</li>
+            <li><span class="rule-icon">✦</span> Minimum spend applies after 9PM on Friday &amp; Saturday: ₹2,000 per person.</li>
+            <li><span class="rule-icon">✦</span> Weather cancellations: 24-hour notice, full refund. Same-night weather changes: complimentary main floor transfer.</li>
+            <li><span class="rule-icon">✦</span> Dress code: smart casual and above. The rooftop has a view — dress for it.</li>
+            <li><span class="rule-icon">✦</span> No external food or beverages. No exceptions.</li>
+          </ul>
+        </div>
+        <div>
+          <p class="sub-label">Rooftop Bar Menu</p>
+          <h2 class="sub-heading">Drink <em>up.</em></h2>
+          <div class="gold-divider"></div>
+          <p class="sub-body" style="margin-bottom:24px">The rooftop bar runs a curated selection alongside the full cocktail menu.</p>
+          <div class="menu-item"><div><p class="dish-name">Arabian Spritz</p><p class="dish-desc">Aperol, Chandon India sparkling, fresh orange, soda — the rooftop's signature order</p></div><span class="dish-price">₹680</span></div>
+          <div class="menu-item"><div><p class="dish-name">9th Floor G&T</p><p class="dish-desc">Greater Than gin, premium tonic, four botanicals, served in a balloon glass</p></div><span class="dish-price">₹720</span></div>
+          <div class="menu-item"><div><p class="dish-name">Rooftop Negroni</p><p class="dish-desc">The Bandra Negroni in its natural habitat. Better up here for reasons we can't explain.</p></div><span class="dish-price">₹820</span></div>
+          <div class="menu-item"><div><p class="dish-name">Cloud Nine</p><p class="dish-desc">Vodka, elderflower, fresh cucumber, lime, soda — light, clean, perfect for warm evenings</p></div><span class="dish-price">₹740</span></div>
+          <div style="margin-top:24px">
+            <a href="cocktails.html" class="cta-ghost">Full Bar Menu</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="page-body" style="text-align:center">
+    <p class="sub-label">Reserve the Rooftop</p>
+    <h2 class="sub-heading" style="max-width:500px;margin:0 auto 24px">The best table in Bandra is outside.</h2>
+    <p style="color:var(--warm);font-size:15px;max-width:440px;margin:0 auto 40px;line-height:1.9">Dinner service from 7PM. After 9PM for cocktails and the city. Rooftop private hire available for groups of 30 or more.</p>
+    <div style="display:flex;gap:24px;justify-content:center;flex-wrap:wrap">
+      <a href="index.html#reserve" class="cta-gold">Reserve a Table</a>
+      <a href="private-events.html" class="cta-ghost">Private Hire</a>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Rooftop Hours</h4><p>Dinner: 7PM – 1AM<br>Fri &amp; Sat: 7PM – 4AM<br>Reservations required after 9PM</p></div>
+        <div class="footer-col"><h4>Reservations</h4><a href="index.html#reserve">Book a Table</a><a href="mailto:reservations@wellbeing.in">reservations@wellbeing.in</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">Nine floors up. The city looks different from here.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
