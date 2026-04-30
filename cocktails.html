@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktails & Bar — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:65vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; Cocktails &amp; Bar</p>
+      <h1 class="page-title">The <em>Bar.</em></h1>
+      <p class="page-tagline">Marcus DeSouza's bar menu is not an afterthought. It is the reason some people come here before they even think about dinner.</p>
+    </div>
+  </section>
+
+  <!-- INTRO -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">Bar Director's Note</p>
+        <h2 class="sub-heading">A drink should<br>tell you <em>something.</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">The bar programme at Wellbeing is built on a single principle: every drink should have a reason. A reason for the base spirit, a reason for the acid, a reason for the garnish. If we can't explain why something is in the glass, it's not in the glass.</p>
+        <p class="sub-body" style="margin-top:16px">We work with Indian spirits where they outperform the imported alternative. We work with local citrus — Byadagi lemon, Coorg orange — because the flavour profile is different here, and that difference is worth building around.</p>
+        <p class="sub-body" style="margin-top:16px;font-style:italic;color:var(--gold)">The bar closes last. Always.</p>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1575444758702-4a6b9222336e?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <!-- SIGNATURE COCKTAILS -->
+    <div style="margin-top:80px">
+      <p class="sub-label">Signature Cocktails</p>
+      <h2 class="sub-heading">Made here. <em>Only here.</em></h2>
+      <p class="sub-body" style="margin-bottom:32px">These don't exist anywhere else. Some of them have been on the menu since opening night.</p>
+      <div class="gold-divider"></div>
+      <div style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:0 48px">
+        <div class="menu-item"><div><p class="dish-name">The Loom</p><p class="dish-desc">Aged Old Monk rum, toddy palm jaggery syrup, Byadagi lemon, cardamom bitters, smoked rosemary sprig — our oldest drink, unchanged since 2019</p></div><span class="dish-price">₹750</span></div>
+        <div class="menu-item"><div><p class="dish-name">Bandra Negroni</p><p class="dish-desc">Goa-distilled gin, Campari, house-made kokum vermouth, dehydrated blood orange — Mumbai's answer to a Roman classic</p></div><span class="dish-price">₹820</span></div>
+        <div class="menu-item"><div><p class="dish-name">Monsoon Season</p><p class="dish-desc">Malabar coast rum, fresh pineapple, turmeric, coconut water, Angostura, served with the smell of rain (petrichor garnish)</p></div><span class="dish-price">₹780</span></div>
+        <div class="menu-item"><div><p class="dish-name">Kashmiri Sour</p><p class="dish-desc">Apple brandy, Kashmiri chilli-infused honey, walnut bitters, egg white, dehydrated apple chip</p></div><span class="dish-price">₹850</span></div>
+        <div class="menu-item"><div><p class="dish-name">Andhra Heat</p><p class="dish-desc">Mezcal, fire-roasted tomato, Andhra green chilli, tamarind, Tajín rim — not for the cautious</p></div><span class="dish-price">₹900</span></div>
+        <div class="menu-item"><div><p class="dish-name">Chai Martini</p><p class="dish-desc">Ketel One vodka, masala chai concentrate, condensed milk foam, garam masala dust — the one everyone photographs</p></div><span class="dish-price">₹820</span></div>
+        <div class="menu-item"><div><p class="dish-name">The Silk Route</p><p class="dish-desc">Japanese whisky, saffron honey, rose water, dry vermouth, gold leaf — ordered at least once by everyone who sees it</p></div><span class="dish-price">₹950</span></div>
+        <div class="menu-item"><div><p class="dish-name">Toddy Hour</p><p class="dish-desc">Goa cashew feni, coconut vinegar, fresh lime, palm jaggery, soda — a tribute to Kerala's original bar culture</p></div><span class="dish-price">₹650</span></div>
+      </div>
+    </div>
+
+    <!-- CLASSICS -->
+    <div style="margin-top:64px">
+      <p class="sub-label">Classics Done Our Way</p>
+      <h2 class="sub-heading">Familiar. But <em>better.</em></h2>
+      <p class="sub-body" style="margin-bottom:32px">We respect the originals. We just think they benefit from context.</p>
+      <div class="gold-divider"></div>
+      <div style="margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:0 48px">
+        <div class="menu-item"><div><p class="dish-name">Old Fashioned</p><p class="dish-desc">Single malt Indian whisky (Indri Diwali), demerara, walnut bitters, orange peel — the format is right, the ingredients are ours</p></div><span class="dish-price">₹820</span></div>
+        <div class="menu-item"><div><p class="dish-name">Dry Martini</p><p class="dish-desc">Great Rift gin, house dry vermouth, lemon zest or olive — stirred to 32°C exactly, not a degree more</p></div><span class="dish-price">₹780</span></div>
+        <div class="menu-item"><div><p class="dish-name">Margarita</p><p class="dish-desc">Casamigos blanco, Coorg orange triple sec, fresh lime, smoked salt rim — because a good margarita never needs explanation</p></div><span class="dish-price">₹800</span></div>
+        <div class="menu-item"><div><p class="dish-name">Whisky Sour</p><p class="dish-desc">Jameson, fresh lemon, sugar, aquafaba (vegan egg white), Angostura float — the bar's most consistent order</p></div><span class="dish-price">₹720</span></div>
+        <div class="menu-item"><div><p class="dish-name">Daiquiri</p><p class="dish-desc">Havana 3, fresh lime, cane sugar — three ingredients, no shortcuts, served ice-cold in a coupe</p></div><span class="dish-price">₹680</span></div>
+        <div class="menu-item"><div><p class="dish-name">Penicillin</p><p class="dish-desc">Blended Scotch, lemon, honey-ginger syrup, Laphroaig float — Sam Ross's classic, our execution</p></div><span class="dish-price">₹820</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ZERO PROOF -->
+  <section class="page-section" style="background:rgba(201,169,110,0.03);border-top:1px solid var(--border)">
+    <div class="inner">
+      <p class="sub-label">Zero Proof</p>
+      <h2 class="sub-heading">Non-alcoholic. Not <em>boring.</em></h2>
+      <p class="sub-body" style="margin-bottom:48px">The zero-proof menu gets the same attention as everything else behind the bar. Which is a lot.</p>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px">
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p class="dish-name" style="color:var(--cream);font-size:16px">Garden & Smoke</p>
+          <p class="dish-desc" style="margin-top:8px">Cucumber water, holy basil, smoked rosemary, lime, sparkling water — the bar's best seller by volume</p>
+          <p style="color:var(--gold);font-size:15px;margin-top:16px;font-family:'Cormorant Garamond',serif">₹380</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p class="dish-name" style="color:var(--cream);font-size:16px">Saffron Fizz</p>
+          <p class="dish-desc" style="margin-top:8px">Kashmiri saffron, honey, ginger, Coorg lemon, soda, rose petal garnish</p>
+          <p style="color:var(--gold);font-size:15px;margin-top:16px;font-family:'Cormorant Garamond',serif">₹420</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p class="dish-name" style="color:var(--cream);font-size:16px">The Wellness</p>
+          <p class="dish-desc" style="margin-top:8px">Turmeric, ginger, black pepper, honey, sparkling water, lime — the drink the spa designed with the bar</p>
+          <p style="color:var(--gold);font-size:15px;margin-top:16px;font-family:'Cormorant Garamond',serif">₹360</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p class="dish-name" style="color:var(--cream);font-size:16px">Kokum & Cardamom</p>
+          <p class="dish-desc" style="margin-top:8px">Goan kokum syrup, green cardamom, fresh lime, mint, chilled sparkling water</p>
+          <p style="color:var(--gold);font-size:15px;margin-top:16px;font-family:'Cormorant Garamond',serif">₹340</p>
+        </div>
+        <div style="padding:32px;border:1px solid var(--border);border-radius:2px">
+          <p class="dish-name" style="color:var(--cream);font-size:16px">Cold Brew Tonic</p>
+          <p class="dish-desc" style="margin-top:8px">18-hour Coorg Arabica cold brew, Indian tonic, orange zest, served long over ice</p>
+          <p style="color:var(--gold);font-size:15px;margin-top:16px;font-family:'Cormorant Garamond',serif">₹480</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPIRITS LIBRARY -->
+  <div class="page-body">
+    <p class="sub-label">The Library</p>
+    <h2 class="sub-heading">Spirits worth <em>talking about.</em></h2>
+    <div class="gold-divider"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;margin-top:40px">
+      <div>
+        <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px">Whisky</p>
+        <div class="menu-item" style="border-bottom:1px solid rgba(201,169,110,0.06)"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Indri Diwali Edition</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Triple wood, Indian single malt, Haryana</p></div><span class="dish-price">₹650</span></div>
+        <div class="menu-item" style="border-bottom:1px solid rgba(201,169,110,0.06)"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Amrut Fusion</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Indian peated malt, Bangalore</p></div><span class="dish-price">₹580</span></div>
+        <div class="menu-item"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Paul John Nirvana</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Unpeated single malt, Goa</p></div><span class="dish-price">₹520</span></div>
+      </div>
+      <div>
+        <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px">Gin</p>
+        <div class="menu-item" style="border-bottom:1px solid rgba(201,169,110,0.06)"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Greater Than Gin</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Juniper forward, citrus, Delhi — locally distilled</p></div><span class="dish-price">₹420</span></div>
+        <div class="menu-item" style="border-bottom:1px solid rgba(201,169,110,0.06)"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Hendrick's Grand Cabaret</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Rose petal, cucumber, exotic botanicals</p></div><span class="dish-price">₹680</span></div>
+        <div class="menu-item"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Monkey 47</p><p style="font-size:12px;color:var(--warm);margin-top:4px">47 botanicals, Black Forest, Germany</p></div><span class="dish-price">₹720</span></div>
+      </div>
+      <div>
+        <p style="font-size:10px;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:var(--gold);margin-bottom:20px">Rum</p>
+        <div class="menu-item" style="border-bottom:1px solid rgba(201,169,110,0.06)"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Plantation XO 20th Anniversary</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Double aged, Barbados — the bar's finest rum</p></div><span class="dish-price">₹780</span></div>
+        <div class="menu-item" style="border-bottom:1px solid rgba(201,169,110,0.06)"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Old Monk 12 Year</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Dark rum, vanilla, toffee — the sentimental choice</p></div><span class="dish-price">₹380</span></div>
+        <div class="menu-item"><div><p style="font-size:14px;color:var(--cream);font-family:'Space Grotesk',sans-serif">Bacardi 8 Años</p><p style="font-size:12px;color:var(--warm);margin-top:4px">Eight-year aged, dried fruit, warm spice</p></div><span class="dish-price">₹480</span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Bar Hours</h4><p>Opens 6PM daily<br>Closes when it closes<br>(Never before 2AM)</p></div>
+        <div class="footer-col"><h4>Bar Enquiries</h4><a href="mailto:bar@wellbeing.in">bar@wellbeing.in</a><a href="index.html#reserve">Book a Table</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">The bar closes last. Always.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
