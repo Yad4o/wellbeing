@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Pool — WELLBEING</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="pages.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="cursor"></div><div id="cursor-trail"></div>
+  <nav id="nav">
+    <a href="index.html" class="logo">WELL<span>BEING</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#experience">Experience</a></li>
+      <li><a href="index.html#nights">Nights</a></li>
+      <li><a href="menu.html">Menu</a></li>
+      <li><a href="pool.html" style="color:var(--cream)">The Pool</a></li>
+      <li><a href="spa.html">Spa</a></li>
+    </ul>
+    <a href="index.html#reserve" class="nav-reserve">Reserve</a>
+    <button class="hamburger" id="hamburger"><span></span><span></span></button>
+  </nav>
+  <div class="mobile-overlay" id="mobileOverlay">
+    <ul>
+      <li><a href="index.html" onclick="closeMenu()">Home</a></li>
+      <li><a href="pool.html" onclick="closeMenu()">The Pool</a></li>
+      <li><a href="spa.html" onclick="closeMenu()">Spa</a></li>
+      <li><a href="menu.html" onclick="closeMenu()">Menu</a></li>
+      <li><a href="index.html#reserve" onclick="closeMenu()">Reserve</a></li>
+    </ul>
+  </div>
+
+  <!-- HERO -->
+  <section class="page-hero" style="min-height:60vh">
+    <div class="page-hero-bg" style="background-image:url('https://images.unsplash.com/photo-1540541338537-1220205ac700?w=1920&q=85&auto=format&fit=crop')"></div>
+    <div class="page-hero-content">
+      <p class="breadcrumb"><a href="index.html">Wellbeing</a> &nbsp;/&nbsp; The Pool</p>
+      <h1 class="page-title">Infinity <em>Pool</em></h1>
+      <p class="page-tagline">Heated. 25 metres. Eight floors above the city. Open daily.</p>
+    </div>
+  </section>
+
+  <!-- OVERVIEW -->
+  <div class="page-body">
+    <a href="index.html" class="back-link">Back to Home</a>
+    <div class="two-col">
+      <div>
+        <p class="sub-label">The Space</p>
+        <h2 class="sub-heading">Where the city<br>meets the <em>sky.</em></h2>
+        <div class="gold-divider"></div>
+        <p class="sub-body">Our 25-metre heated infinity pool sits on the 8th floor, with an unobstructed view of the Bandra skyline. The water temperature is maintained at 29°C year-round. Four poolside cabanas. A dedicated pool bar. Sunrise laps or sunset cocktails — both are equally encouraged.</p>
+        <p class="sub-body" style="margin-top:16px">The pool deck is open to hotel guests, day pass holders, and Wellbeing members. No children under 16. No exceptions.</p>
+        <div class="gold-divider"></div>
+        <div style="display:flex;gap:40px;margin-top:8px">
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">25m</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Length</p></div>
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">29°C</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Heated</p></div>
+          <div><span style="font-family:'Cormorant Garamond',serif;font-size:40px;color:var(--gold)">8th</span><p style="font-size:11px;letter-spacing:0.15em;text-transform:uppercase;color:var(--warm);margin-top:4px">Floor</p></div>
+        </div>
+      </div>
+      <div class="page-img" style="background-image:url('https://images.unsplash.com/photo-1575429198097-0414ec08e8cd?w=900&q=80&auto=format&fit=crop')"></div>
+    </div>
+
+    <!-- HOURS -->
+    <div class="info-cards" style="margin-top:80px">
+      <div class="info-card">
+        <div class="info-card-icon">🌅</div>
+        <h3>Morning Swim</h3>
+        <p>Open from 6:30AM for lap swimmers. The pool is cleared for lengths until 9AM. Towels, locker room, and complimentary mineral water included.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">☀️</div>
+        <h3>Day Lounge</h3>
+        <p>From 10AM, the deck opens for lounging. Sun beds available on first-come basis. Poolside cocktail and food service begins at noon.</p>
+      </div>
+      <div class="info-card">
+        <div class="info-card-icon">🌙</div>
+        <h3>Sunset & Evening</h3>
+        <p>The pool lights come on at dusk. Evening swim until 10PM. On Friday and Saturday the pool deck stays open until 1AM for members and guests.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- PRICING -->
+  <section class="page-section" style="background:var(--black2)">
+    <div class="inner">
+      <p class="sub-label">Day Passes & Cabanas</p>
+      <h2 class="sub-heading">Simple <em>pricing.</em></h2>
+      <div class="pricing-grid">
+        <div class="price-card">
+          <span class="price-tag-label">Weekday Pass</span>
+          <div class="price-amount"><sup>₹</sup>800</div>
+          <p class="price-period">Per person · Mon–Thu</p>
+          <ul class="price-features">
+            <li>Full pool access (6:30AM–10PM)</li>
+            <li>Sun bed & towel</li>
+            <li>Locker room access</li>
+            <li>Welcome drink</li>
+          </ul>
+          <a href="index.html#reserve" class="cta-ghost" style="display:block;text-align:center">Book Now</a>
+        </div>
+        <div class="price-card featured">
+          <span class="price-tag-label">Weekend Pass</span>
+          <div class="price-amount"><sup>₹</sup>1200</div>
+          <p class="price-period">Per person · Fri–Sun</p>
+          <ul class="price-features">
+            <li>Full pool access (6:30AM–1AM)</li>
+            <li>Priority sun bed allocation</li>
+            <li>Locker room access</li>
+            <li>Welcome cocktail</li>
+            <li>20% off poolside menu</li>
+          </ul>
+          <a href="index.html#reserve" class="cta-gold" style="display:block;text-align:center">Book Now</a>
+        </div>
+        <div class="price-card">
+          <span class="price-tag-label">Cabana (Full Day)</span>
+          <div class="price-amount"><sup>₹</sup>3000</div>
+          <p class="price-period">Per cabana · Up to 4 guests</p>
+          <ul class="price-features">
+            <li>Private shaded cabana</li>
+            <li>4 day passes included</li>
+            <li>Dedicated poolside host</li>
+            <li>Complimentary fruit platter</li>
+            <li>Chilled champagne (1 bottle)</li>
+          </ul>
+          <a href="index.html#reserve" class="cta-ghost" style="display:block;text-align:center">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RULES -->
+  <div class="page-body">
+    <div class="two-col">
+      <div>
+        <p class="sub-label">Pool Rules & Policies</p>
+        <h2 class="sub-heading">Keep it <em>clean.</em></h2>
+        <p class="sub-body">We take the pool experience seriously — for everyone's enjoyment, we ask that guests respect the following guidelines.</p>
+        <ul class="rules-list" style="margin-top:32px">
+          <li><span class="rule-icon">✦</span> No glass, ceramic, or breakable items on the pool deck.</li>
+          <li><span class="rule-icon">✦</span> No diving or jumping into the pool at any time.</li>
+          <li><span class="rule-icon">✦</span> Guests must shower before entering the pool.</li>
+          <li><span class="rule-icon">✦</span> No inflatables, pool toys, or water guns.</li>
+          <li><span class="rule-icon">✦</span> No photography of other guests without consent.</li>
+          <li><span class="rule-icon">✦</span> Minimum age: 16 years. ID may be requested.</li>
+          <li><span class="rule-icon">✦</span> Appropriate swimwear only — no shorts, underwear, or street clothes.</li>
+          <li><span class="rule-icon">✦</span> Loud music from personal devices is not permitted. The deck has its own curated soundtrack.</li>
+          <li><span class="rule-icon">✦</span> Sun beds cannot be reserved. Please do not leave personal items unattended for more than 30 minutes.</li>
+          <li><span class="rule-icon">✦</span> Management reserves the right to ask anyone to leave without a refund.</li>
+        </ul>
+      </div>
+      <div>
+        <p class="sub-label">The Pool Bar</p>
+        <h2 class="sub-heading">Drink <em>well.</em></h2>
+        <p class="sub-body">The pool bar operates from noon. Food service until 9PM. Cocktails and drinks until closing.</p>
+        <div style="margin-top:32px;display:flex;flex-direction:column;gap:0">
+          <div class="menu-item"><div><p class="dish-name">Poolside Spritz</p><p class="dish-desc">Aperol, prosecco, blood orange, sparkling water</p></div><span class="dish-price">₹620</span></div>
+          <div class="menu-item"><div><p class="dish-name">Frozen Coconut Margarita</p><p class="dish-desc">Tequila, coconut water, fresh lime, chilli salt rim</p></div><span class="dish-price">₹680</span></div>
+          <div class="menu-item"><div><p class="dish-name">The Aqua</p><p class="dish-desc">Gin, cucumber, elderflower, tonic, mint</p></div><span class="dish-price">₹700</span></div>
+          <div class="menu-item"><div><p class="dish-name">Mango Lassi Cooler</p><p class="dish-desc">Alphonso mango, yoghurt, cardamom, rose water, no alcohol</p></div><span class="dish-price">₹320</span></div>
+          <div class="menu-item"><div><p class="dish-name">Grilled Corn & Hummus Board</p><p class="dish-desc">Charred corn, smoked hummus, flatbread, crudités</p></div><span class="dish-price">₹480</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="footer-logo">WELL<span>BEING</span></div>
+      <div class="footer-cols">
+        <div class="footer-col"><h4>Visit</h4><p>9th Floor, The Loom Building<br>16 Hill Road, Bandra West<br>Mumbai 400050</p></div>
+        <div class="footer-col"><h4>Pool Hours</h4><p>Daily 6:30AM – 10PM<br>Fri & Sat until 1AM</p></div>
+        <div class="footer-col"><h4>Contact</h4><a href="#">pool@wellbeing.in</a><a href="index.html#reserve">Make a Reservation</a></div>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>© 2025 Wellbeing.</p><p class="footer-note">No glass on the pool deck. No exceptions.</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
